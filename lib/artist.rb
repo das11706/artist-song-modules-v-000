@@ -1,7 +1,7 @@
 require 'pry'
 
 class Artist
-  
+
   extend Memorable::ClassMethods
   include Memorable::InstanceMethods
   include Paramable
@@ -12,7 +12,6 @@ class Artist
   @@artists = []
 
   def initialize
-    # self.class.all << self
     super
     @songs = []
   end
